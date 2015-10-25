@@ -13,7 +13,7 @@
 Node reverse(Node head) {
     Node temp=head;
     Node current=head;
-    if (head==null)return;
+    if (head==null)return head;
     while(current.next!=null){
         temp=current.next;
         current.next=temp.next;
