@@ -14,7 +14,7 @@ public class HourGlass {
 			for (int j=0;j<MEMBER_SIZE;j++) members[i][j]=stdIn.nextInt();
 		}
 		
-		int maxValueOfHourGlass=0;
+		int maxValueOfHourGlass=-100;
 		for(int i=0; i<MEMBER_SIZE-2; i++){
 			for(int j=0; j<MEMBER_SIZE-2; j++){
 				int totalCountOfCurrentHourGlass=getTotalCountOfHourGlass(i,j,members);
