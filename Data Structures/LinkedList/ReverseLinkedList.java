@@ -11,6 +11,12 @@
     // You only need to complete this method. 
 
 Node reverse(Node head) {
+    /*
+    -->(2)--5--3--4 
+    -->5--(2)--3--4 {5 is moved to the beginning}
+    -->3--5--(2)--4 {3 is moved to the beginning}
+    -->4--3--5--(2) {4 is moved to the beginning}
+    */
     Node temp=head;
     Node current=head;
     if (head==null)return head;
