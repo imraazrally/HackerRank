@@ -1,3 +1,6 @@
+import java.util.*;
+
+public class Solution{
 	public static void main(String [] args){
 		int [] notes=new int[]{20,10,5,1};
 		Denomination d=new Denomination(notes);
