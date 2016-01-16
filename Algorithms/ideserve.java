@@ -2,14 +2,19 @@ import java.util.*;
 
 public class Solution{
 	public static void main(String [] args){
-		Denom cash=new Denom(new int[]{20,10,5,1});
+		int [] denominations=new int[]{20,10,5,1};
+
+
+		System.out.println("--Counts--");
+
+		Denom cash=new Denom(denominations);
 		cash.printNumberOfWays(20);
 	}
 }
 
 class Denom{
 	int [] denoms;
-	int [] state;	
+	int [] state;
 
 	public Denom(int [] denoms){
 		this.denoms=denoms;
@@ -19,7 +24,7 @@ class Denom{
 	public void printNumberOfWays(int amount){
 		numberOfWays(amount);
 	}
-	
+
 	private void numberOfWays(int amount){
 		if(amount<0)return;
 		if(amount==0){
